@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/menu_newgame"
+    android:title="New game"
+
+    android:icon="@drawable/menu_refresh3"
+       app:showAsAction="always|withText"/>
+    <item android:id="@+id/menu_resetscore"
+        android:title="Reset score"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menu_quit"
+        android:title="Quit"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menu_about"
+        android:title="About"
+        app:showAsAction="never"/>
+        />
+
+
+</menu>

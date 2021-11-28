@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity"   >
+
+
+    <LinearLayout
+
+        android:id="@+id/Player1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ImgLeft1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/blue_back" />
+        <ImageView
+            android:id="@+id/ImgCenter1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/ImgRight1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/blue_back"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LayoutscorePlayer1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Player1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <EditText
+                android:id="@+id/EditName1"
+                style="@android:style/Widget.AutoCompleteTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittextstyle"
+            android:gravity="center"
+                android:text=""
+            android:textColorHint="#F4F4F6"
+                        android:hint="Name 1"
+                android:textColor="#F4F4F6" />
+            <TextView
+                android:id="@+id/ScoreName1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittextstyle"
+                android:gravity="center"
+                android:text="Score: 0"
+                android:textColor="#F4F4F6" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/LayoutscorePlayer2"
+       android:layout_below="@id/LayoutscorePlayer1"
+    android:layout_alignParentLeft="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+        <EditText
+            android:id="@+id/EditName2"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittextstyle"
+            android:gravity="center"
+            android:text=""
+            android:hint="Name 2"
+            android:textColorHint="#F4F4F6"
+            android:textColor="#F4F4F6" />
+
+        <TextView
+            android:id="@+id/ScoreName2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittextstyle"
+            android:gravity="center"
+            android:text="Score: 0"
+            android:textColor="#F4F4F6" />
+
+
+</LinearLayout>
+<LinearLayout
+        android:id="@+id/Player2"
+        android:layout_alignParentLeft="true"
+       android:layout_below="@id/LayoutscorePlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ImgLeft2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/blue_back" />
+        <ImageView
+            android:id="@+id/ImgCenter2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/ImgRight2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/blue_back"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
